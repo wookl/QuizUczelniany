@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Panel użytkownika - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Panel użytkownika - Quiz</span>
+				<div class="mdl-layout-spacer"></div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+        			</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="./logged.html">Panel użytkownika</a>
+				<a class="mdl-navigation__link" href="./add-group.html">Dodaj grupę</a>
+				<a class="mdl-navigation__link" href="./settings.html">Ustawienia</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--1-col label-column">Grupy których jesteś członkiem</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="mdl-card mdl-shadow--2dp group-card">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Przykładowa grupa #1</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">UJ</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">2rok</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">dykretna</span>
+								</span>
+								<hr> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick='window.location="./group.html"'>
+									Przejdź do grupy.
+								</a>
+							</div>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp group-card">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Przykładowa grupa #1</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">UJ</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">2rok</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">dykretna</span>
+								</span>
+								<hr> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick='window.location="./group.html"'>
+									Przejdź do grupy.
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col label-column">Grupy którymi zarządzasz</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="mdl-card mdl-shadow--2dp group-card">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Przykładowa grupa #1</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">UJ</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">2rok</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">dykretna</span>
+								</span>
+								<hr> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick='window.location="./group.html"'>
+									Przejdź do grupy.
+								</a>
+							</div>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp group-card">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Przykładowa grupa #1</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">UJ</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">2rok</span>
+								</span>
+								<span class="mdl-chip">
+									<span class="mdl-chip__text">dykretna</span>
+								</span>
+								<hr> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick='window.location="./group.html"'>
+									Przejdź do grupy.
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--1-col label-column">Szukaj</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="half-of-screen-v">
+							<form action="#">
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									<input class="mdl-textfield__input" type="text" id="search">
+									<label class="mdl-textfield__label" for="sample3">Szukaj...</label>
+								</div>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick='document.getElementById("search-results").style.display="block"'>
+									Szukaj
+								</button>
+							</form>
+						</div>
+						<div class="half-of-screen-v">
+							<div id="search-results" style="display: none;">
+								<div class="mdl-card mdl-shadow--2dp group-card">
+									<div class="mdl-card__title">
+										<h2 class="mdl-card__title-text">Znaleziona grupa #1</h2>
+									</div>
+									<div class="mdl-card__supporting-text">
+										<span class="mdl-chip">
+									<span class="mdl-chip__text">UJ</span>
+										</span>
+										<span class="mdl-chip">
+									<span class="mdl-chip__text">2rok</span>
+										</span>
+										<span class="mdl-chip">
+									<span class="mdl-chip__text">dykretna</span>
+										</span>
+										<hr> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+									</div>
+									<div class="mdl-card__actions mdl-card--border">
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick='window.location="./group.html"' onclick='window.location="./group.html"'>
+									Przejdź do grupy.
+								</a>
+									</div>
+								</div>
+							</div>
+							Szukaj grup po nazwie lub tagu.
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

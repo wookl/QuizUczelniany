@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Dodaj grupę - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Dodaj grupę</span>
+				<div class="mdl-layout-spacer"></div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+        			</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="./logged.html">Panel użytkownika</a>
+				<a class="mdl-navigation__link" href="./add-group.html">Dodaj grupę</a>
+				<a class="mdl-navigation__link" href="./settings.html">Ustawienia</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content group-content">
+			<div class="page-content">
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp add-group-section">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Dodaj grupę</h4>
+							 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								 <input class="mdl-textfield__input" type="text" id="group-name">
+								 <label class="mdl-textfield__label" for="group-name">Nazwa grupy...</label>
+							</div>
+							<br>
+							<div class="mdl-textfield mdl-js-textfield group-description-container">
+								<textarea class="mdl-textfield__input" type="text" rows= "3" id="group-desc" ></textarea>
+								<label class="mdl-textfield__label" for="group-desc">Opis grupy...</label>
+							</div>
+							<h4 class="mdl-cell mdl-cell--12-col">Tagi</h4>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">UJ</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">TJA</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">2_rok</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								 <input class="mdl-textfield__input" type="text" id="add-tag">
+								 <label class="mdl-textfield__label" for="add-tag">Dodaj nowy...</label>
+							</div>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="./add-quiz.html" class="mdl-button">Gotowe!</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

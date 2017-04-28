@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Grupa: (nazwa_grupy) - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Grupa: (nazwa_grupy)</span>
+				<div class="mdl-layout-spacer"></div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+        			</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+			</div>
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#overwiev" class="mdl-layout__tab is-active">Grupa</a>
+				<a href="#settings" class="mdl-layout__tab">Administracja</a>
+				<a href="#" class="mdl-layout__tab">(ten pasek będzie widoczny tylko dla admina!)</a>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="./logged.html">Panel użytkownika</a>
+				<a class="mdl-navigation__link" href="./add-group.html">Dodaj grupę</a>
+				<a class="mdl-navigation__link" href="./settings.html">Ustawienia</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content group-content">
+			<section class="mdl-layout__tab-panel is-active" id="overwiev">
+			<div class="page-content">
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Baza pytań</h4>
+							<h6>
+								Aktualnie w bazie znajduje się 20 pytań.
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick='window.location="./add-question.html"'>
+									Dodaj pytanie
+								</button>
+							</h6>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./show-questions.html">
+									Przejrzyj pytania
+								</a>
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./quiz.html">
+									Rozwiąż losowy quiz
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Ułożone quizy</h4>
+							<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+								<div class="section__circle-container__circle mdl-color--primary"></div>
+							</div>
+							<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+								<h5>Egzamin z roku 2015/2016</h5>
+								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation
+								nostrud quis <a href="./quiz.html">Rozwiąż quiz</a>.
+							</div>
+							<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+								<div class="section__circle-container__circle mdl-color--primary"></div>
+							</div>
+							<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+								<h5>Egzamin poprawkowy z roku 2015/2016</h5>
+								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation
+								nostrud quis <a href="./quiz.html">Rozwiąż quiz</a>.
+							</div>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="./add-quiz.html" class="mdl-button">Ułóż własny quiz</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			</section>
+			<section class="mdl-layout__tab-panel is-active" id="settings">
+			<div class="page-content">
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp settings-tags-section">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Tagi</h4>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">UJ</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">TJA</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							<span class="mdl-chip mdl-chip--deletable">
+								<span class="mdl-chip__text">2_rok</span>
+								<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+							</span>
+							 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								 <input class="mdl-textfield__input" type="text" id="add-tag">
+								 <label class="mdl-textfield__label" for="add-tag">Dodaj nowy...</label>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Zatwierdzone quizy</h4>
+							<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+								<div class="section__circle-container__circle mdl-color--green"></div>
+							</div>
+							<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+								<h5>Egzamin z roku 2015/2016</h5>
+								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation
+								nostrud quis <a href="./solve-quiz.html">Zobacz quiz</a>.
+							</div>
+							<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+								<div class="section__circle-container__circle mdl-color--green"></div>
+							</div>
+							<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+								<h5>Egzamin poprawkowy z roku 2015/2016</h5>
+								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation
+								nostrud quis <a href="./solve-quiz.html">Zobacz quiz</a>.
+							</div>
+							<h4 class="mdl-cell mdl-cell--12-col">Oczekują na zatwierdzenie</h4>
+							<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+								<div class="section__circle-container__circle mdl-color--red"></div>
+							</div>
+							<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+								<h5>Egzamin z Mordoru 2012</h5>
+								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation
+								nostrud quis <a href="./solve-quiz.html">Zobacz quiz</a>.
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp settings-questions-section">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Baza pytań</h4>
+							<table class="mdl-data-table mdl-js-data-table">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Pytanie</th>
+										<th>Autor</th>
+										<th>Zatwierdź</th>
+										<th>Usuń</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td onclick="showFullQuestion(this)" question-data='{"question": "Jaka maska podsieci jest reprezentowana zapisem /24?","answers": ["255.255.255.255","255.255.255.0","0.255.255.255","24.24.24.24","2.4.0.0"]}'>Jaka maska podsieci jest....</td>
+										<td>Jan Kowalski</td>
+										<td>
+											<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect table-addbutton">
+												Dodaj
+											</button>
+										</td>
+										<td>
+											<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect table-delbutton">
+												Usuń
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div id="blur" onclick='document.getElementById("blur").style.display="none";'>
+								<div id="question-preview" class="mdl-card mdl-shadow--2dp">
+									<div class="mdl-card__title">
+										<h2 class="mdl-card__title-text">Pytanie #1</h2>
+									</div>
+									<div id="question-text" class="mdl-card__supporting-text">
+									
+									</div>
+									<div id="question-answers" class="mdl-card__actions mdl-card--border">
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
+										<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp settings-admins-section">
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+							<h4 class="mdl-cell mdl-cell--12-col">Administratorzy</h4>
+							<p>Tutaj wypisani będą wszyscy użytkownicy w grupie. Można dodać też opcję banowania &#9786;</p>
+							<ul>
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons  mdl-list__item-avatar">person</i>
+										Jan Kowalski
+									</span>
+									<span class="mdl-list__item-secondary-action">
+										<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+											<input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+										</label>
+									</span>
+								</li>
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons  mdl-list__item-avatar">person</i>
+										Annna Nowak
+									</span>
+									<span class="mdl-list__item-secondary-action">
+										<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-2">
+											<input type="checkbox" id="list-switch-2" class="mdl-switch__input">
+										</label>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			</section>
+		</main>
+	</div>
+</body>
+	<script>
+		function showFullQuestion(elem) {
+			var data = JSON.parse(elem.getAttribute("question-data")),
+				questionElem = document.getElementById("blur");
+			console.log(data);
+			
+			document.getElementById("question-text").innerHTML = data.question;
+			for(var i=0; i<5; i++) {
+				console.log(document.getElementById("question-answers").children[i]);
+				document.getElementById("question-answers").children[i].innerHTML = data.answers[i];
+			}
+			questionElem.style.display = "block";
+		}
+	</script>
+</html>
