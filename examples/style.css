@@ -88,6 +88,7 @@ margin: 25px 0 0 20px;
 	position: fixed;
 	top: 200px;
 	left: calc(50% - 165px);
+	z-index: 999;
 }
 #blur {
 	display:none;
@@ -116,4 +117,27 @@ background: rgba(255,255,255,.7);
 }
 .add-group-section hr{
 	width: 100%;
+}
+.center-cards .mdl-card {
+	margin: 10px auto;
+}
+.question-card .mdl-grid{
+	width: 80%;
+}
+.question-card .mdl-grid .mdl-cell{
+	margin: 10px 0;
+}
+.question-card i{
+	font-size: 14px;
+}
+.question-card button {
+    height: 24px;
+    min-width: unset;
+    width: 24px;
+}
+.switch-label {
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	font-size: 12px;
 }

@@ -1,25 +1,103 @@
-<!doctype html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pl">
+
 <head>
-    <title>Quiz</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Pytanie #1 - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="./static/icon.css">
+	<link rel="stylesheet" href="./static/material.min.css">
+	<script defer src="./static/material.min.js"></script>
+
 	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <h1>Quiz</h1>
-    <p>Rozwiązujesz przykłądowy quiz numer 1</p>
-	<hr>
-	<div>
-		<h4>Ile nóg ma pies?</h4>
-		<span>Dwie nogi</span><input type="checkbox">Poprawna odpowiedź<br>
-        <span>Trzy nogi</span><input type="checkbox">Poprawna odpowiedź<br>
-        <span>Czetry nogi</span><input type="checkbox">Poprawna odpowiedź<br>
-        <span>Pięć nóg</span><input type="checkbox">Poprawna odpowiedź<br>
-        <span>Sześć nóg</span><input type="checkbox">Poprawna odpowiedź<br>
-		<a class="big-link" href="quiz.html">Kolejne pytanie</a>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Pytanie #1 - Quiz</span>
+				<div class="mdl-layout-spacer"></div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+        			</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="./logged.html">Panel użytkownika</a>
+				<a class="mdl-navigation__link" href="./add-group.html">Dodaj grupę</a>
+				<a class="mdl-navigation__link" href="./settings.html">Ustawienia</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content center-cards">
+				<div class="mdl-card mdl-shadow--8dp group-card question-card">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Pytanie #1</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Ile nóg ma pies?
+					</div>
+					<hr>
+					<div class="mdl-grid mdl-grid--no-spacing">
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="material-icons">add</i>
+									</button>
+						</div>
+						<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+							Pies ma dwie nogi.
+						</div>
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="material-icons">add</i>
+									</button>
+						</div>
+						<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+							Pies ma trzy nogi.
+						</div>
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="material-icons">add</i>
+									</button>
+						</div>
+						<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+							4
+						</div>
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="material-icons">add</i>
+									</button>
+						</div>
+						<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis. Pies ma dwie nogi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+						</div>
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="material-icons">add</i>
+									</button>
+						</div>
+						<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+							Pies ma sto nóg xD.
+						</div>
+					</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a href="./quiz.html" class="mdl-button">Dalej!</a>
+					</div>
+				</div>
+				<p>Tak btw, strona nie będzie się odświeżała, tylko na tej samej będą zmieniały się pytania</p>
+			</div>
+		</main>
 	</div>
 </body>
+
 </html>

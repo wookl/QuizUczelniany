@@ -1,34 +1,118 @@
-<!doctype html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pl">
+
 <head>
-    <title>Dodaj pytanie</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Dodaj pytanie - Przykładowa grupa #1 - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="./static/icon.css">
+	<link rel="stylesheet" href="./static/material.min.css">
+	<script defer src="./static/material.min.js"></script>
+
 	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <h1>Dodaj pytanie</h1>
-    <p>Wpisz treść pytania i odpowiedzi</p>
-	<hr>
-    <div>
-        <input type="text" placeholder="Treść pytania">
-		<input type="text" placeholder="Wskazówka">
-		<input type="text" placeholder="Wytłumaczenie">
-		<br>
-        <input type="text" placeholder="Odpowiedź #1">
-        <input type="checkbox"> Poprawna<br>
-        <input type="text" placeholder="Odpowiedź #2">
-        <input type="checkbox"> Poprawna<br>
-        <input type="text" placeholder="Odpowiedź #3">
-        <input type="checkbox"> Poprawna<br>
-        <input type="text" placeholder="Odpowiedź #4">
-        <input type="checkbox"> Poprawna<br>
-        <input type="text" placeholder="Odpowiedź #5">
-        <input type="checkbox"> Poprawna<br>
-    </div>
-    <a href="./add-question.html" class="big-link">Dodaj kolejne pytanie</a>
-	<a href="./group.html" class="big-link">Zakończ dodawanie pytań</a>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Dodaj pytanie - Quiz</span>
+				<div class="mdl-layout-spacer"></div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+        			</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="./logged.html">Panel użytkownika</a>
+				<a class="mdl-navigation__link" href="./add-group.html">Dodaj grupę</a>
+				<a class="mdl-navigation__link" href="./settings.html">Ustawienia</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content group-content">
+			<div class="page-content">
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp settings-tags-section">
+					<div class="mdl-card mdl-cell mdl-cell--12-col ">
+						<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing add-question-page">
+							<h5 class="mdl-cell mdl-cell--12-col">Dodajesz pytanie do grupy <strong>Przykładowa grupa #1</strong></h5>
+							<div class="mdl-cell mdl-cell--1-col" style="position:relative;">
+								<span class="switch-label">Czy poprawna</span>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "3" id="question-text"></textarea>
+								<label class="mdl-textfield__label" for="question-text">Treść pytania</label>
+							</div>
+							<div class="mdl-cell mdl-cell--1-col">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="correct-answer-a">
+									<input type="checkbox" id="correct-answer-a" class="mdl-switch__input" />
+								</label>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "2" id="answer-a"></textarea>
+								<label class="mdl-textfield__label" for="answer-a">Odpowiedź a)</label>
+							</div>
+							<div class="mdl-cell mdl-cell--1-col">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="correct-answer-b">
+									<input type="checkbox" id="correct-answer-b" class="mdl-switch__input" checked/>
+								</label>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "2" id="answer-b"></textarea>
+								<label class="mdl-textfield__label" for="answer-a">Odpowiedź b)</label>
+							</div>
+							<div class="mdl-cell mdl-cell--1-col">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="correct-answer-c">
+									<input type="checkbox" id="correct-answer-c" class="mdl-switch__input"/>
+								</label>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "2" id="answer-c"></textarea>
+								<label class="mdl-textfield__label" for="answer-a">Odpowiedź c)</label>
+							</div>
+							<div class="mdl-cell mdl-cell--1-col">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="correct-answer-d">
+									<input type="checkbox" id="correct-answer-d" class="mdl-switch__input"/>
+								</label>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "2" id="answer-d"></textarea>
+								<label class="mdl-textfield__label" for="answer-a">Odpowiedź d)</label>
+							</div>
+							<div class="mdl-cell mdl-cell--1-col">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="correct-answer-e">
+									<input type="checkbox" id="correct-answer-e" class="mdl-switch__input"/>
+								</label>
+							</div>
+							<div class="mdl-cell mdl-cell--11-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "2" id="answer-e"></textarea>
+								<label class="mdl-textfield__label" for="answer-a">Odpowiedź e)</label>
+							</div>
+							<hr>
+							<div class="mdl-cell mdl-cell--2-col">
+								<i class="material-icons mdl-list__item-avatar">info</i>
+							</div>
+							<div class="mdl-cell mdl-cell--10-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" rows= "3" id="question-hint"></textarea>
+								<label class="mdl-textfield__label" for="question-hint">Wskazówka</label>
+							</div>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="#" class="mdl-button">Dodaj pytanie!</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
 </body>
+
 </html>

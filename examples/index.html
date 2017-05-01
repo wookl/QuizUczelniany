@@ -1,77 +1,79 @@
 <!DOCTYPE HTML>
 <html lang="pl">
-    <head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
-	   <title>Zaloguj się - Quiz</title>
-    
-	   <!--https://getmdl.io-->
-	   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-		<link rel="stylesheet" href="./style.css">
-    </head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Zaloguj się - Quiz</title>
+
+	<!--https://getmdl.io-->
+	<link rel="stylesheet" href="./static/icon.css">
+	<link rel="stylesheet" href="./static/material.min.css">
+	<script defer src="./static/material.min.js"></script>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
 
 <body>
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Zaloguj się - Quiz</span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="./about.html">About</a>
-      </nav>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-		<div class="mdl-grid">
-			<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
-				<h3>Zaloguj się do swojego konta</h3>
-				<form action="#">
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="text" id="login">
-						<label class="mdl-textfield__label" for="login">Login...</label>
-					</div>
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="text" id="password">
-						<label class="mdl-textfield__label" for="password">Hasło...</label>
-					</div><br>
-					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" onclick='window.location="./logged.html"'>
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Zaloguj się - Quiz</span>
+				<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="./about.html">About</a>
+				</nav>
+			</div>
+		</header>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
+						<h3>Zaloguj się do swojego konta</h3>
+						<form action="#">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="login">
+								<label class="mdl-textfield__label" for="login">Login...</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="password">
+								<label class="mdl-textfield__label" for="password">Hasło...</label>
+							</div><br>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" onclick="location.href='logged.html';return false;">
 						Zaloguj
 					</button>
-				</form>
-			</div>
-			<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
-				<h2>Quiz</h2>
-				<span>
+						</form>
+					</div>
+					<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
+						<h2>Quiz</h2>
+						<span>
 					Aplikacja wspomagająca naukę do egzaminów, ....
 				</span>
-			</div>
-			<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
-				<h3>Nie posiadasz konta? Zarejestruj się</h3>
-				<form action="#">
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="text" id="login">
-						<label class="mdl-textfield__label" for="login">Login...</label>
 					</div>
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="email" id="email">
-						<label class="mdl-textfield__label" for="email">Email...</label>
-					</div>
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="text" id="password">
-						<label class="mdl-textfield__label" for="password">Hasło...</label>
-					</div><br>
-					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+					<div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--4-col">
+						<h3>Nie posiadasz konta? Zarejestruj się</h3>
+						<form action="#">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="login">
+								<label class="mdl-textfield__label" for="login">Login...</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="email" id="email">
+								<label class="mdl-textfield__label" for="email">Email...</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="password">
+								<label class="mdl-textfield__label" for="password">Hasło...</label>
+							</div><br>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
 						Zarejestruj
 					</button>
-				</form>
+						</form>
+					</div>
+				</div>
 			</div>
-		</div>
+		</main>
 	</div>
-  </main>
-</div>
 </body>
+
 </html>
