@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'users.middleware.RequireLoginMiddleware',
+    'groups.middleware.GroupExistsOr404Middleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -58,9 +59,9 @@ AUTHENTICATION_BACKENDS = ('users.authBackend.UserModelUsernameEmailBacked',)
 
 ROOT_URLCONF = 'app.urls'
 
-LOGIN_REQUIRED_URLS = (  # has to be even empty! requires it 'users.middleware.RequireLoginMiddleware'
-    r'/(.*)$',
-)
+# LOGIN_REQUIRED_URLS = (  # has to be even empty! requires it 'users.middleware.RequireLoginMiddleware'
+#     r'/(.*)$',
+# )
 
 LOGIN_REQUIRED_URLS_EXCEPTIONS = (  # has to be even empty! requires it 'users.middleware.RequireLoginMiddleware'
     r'/guest/(.*)',
